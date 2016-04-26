@@ -29,9 +29,9 @@ end
 
 # Shifts a character a specific number of times in a specific set.
 def move(char, set, displace)
-  start = set.index(char)
+  start  = set.index(char)
   offset = (start + 1) + displace
-  count = 0
+  count  = 0
 
   set.cycle do |c|
     count += 1
